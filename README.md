@@ -1,4 +1,4 @@
-$ powershell -NoProfile -Command "$content = @'# Expense Tracker
+
 
 A full-stack expense tracker built with React (Vite) on the frontend and Express + MongoDB (Mongoose) on the backend.
 
