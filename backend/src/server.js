@@ -39,6 +39,19 @@ app.get("/api", (req, res) => {
   });
 });
 
+// Root welcome route
+app.get("/", (req, res) => {
+  res.json({
+    message: "Welcome to Expense Tracker API",
+    docs: {
+      health: "/health",
+      apiInfo: "/api",
+      expenses: "/api/expenses",
+      stats: "/api/expenses/stats",
+    },
+  });
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
